@@ -1,0 +1,203 @@
+@media screen and (max-width: 990px){
+    /* LANDING PAGE */
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    header nav .img-container{
+        height: 50%;
+    }
+
+    header nav .img-container .logo{
+        margin-left: 0%;
+    }
+
+    header nav ul{
+        display: none;
+    }
+
+    header nav button{
+        display: none;
+    }
+
+    header #hamburger{
+        position: relative;
+        display: block;
+        width: 4vh;
+        cursor: pointer;
+        appearance: none;
+        background: none;
+        border: none;
+        z-index: 2;
+        white-space: nowrap;
+    }
+
+    header #mobile{
+        position: fixed;
+        top: 0;
+        right: -38%;
+        width: 38%;
+        min-height: 100vh;
+        display: block;
+        background-color: #1133e3;
+        padding-top: 12vh;
+        z-index: 1;
+    }
+
+    /* CATEGORIES */
+    main article #categories{
+        height: 170vh;
+    }
+
+    main article .subheading-container{
+        padding: 10vh 0;
+    }
+    
+    main article #categories .categories-container .flex-container{
+        flex-direction: column;
+        margin: 0 10%;
+    }
+
+    main article #categories .categories-container .flex-container .card{
+        width: 50%;
+        margin: 1vh auto;
+        white-space: nowrap;
+    }
+
+    main article .vanish{
+        display: none;
+    }
+
+    main article #categories .categories-container .flex-container .special{
+        padding: 9px;
+    }
+    
+    main article #categories .categories-container .flex-container .card .card-body .card-text{
+        font-size: 1.1rem;
+    }
+
+    /* JOBS */
+    main article #jobs .jobs-container .card .user{
+        height: 5vh;
+        width: 5vh;
+        top: 1vh;
+    }
+
+    main article #jobs .jobs-container .card .card-body{
+        padding: 15px 20px 0 50px;
+    }
+
+    main article #jobs .jobs-container .card .card-body .normal{
+        font-size: 0.8rem;
+        height: 2vh;
+    }
+
+    main article #jobs .img-container3 .background-img1{
+        bottom: -310vh;
+    }
+
+    /* FREELANCERS */
+    main article #freelancers{
+        height: 185vh;
+    }
+
+    main article #freelancers .freelancers-container{
+        flex-direction: column;
+    }
+
+    main article #freelancers .freelancers-container .card{
+        margin: 1vh auto;
+    }
+
+    main article #freelancers .flexbox .card .card-body .normal{
+        font-size: 0.9rem;
+    }
+
+    /* ACCOUNTS */
+    main article #accounts{
+        height: 240vh;
+    }
+
+    main article #accounts .accounts-container{
+        flex-direction: column;
+    }
+
+    main article #accounts .accounts-container .card, main article #accounts .accounts-container .card:hover{
+        margin: 1vh auto;
+    }
+
+    /* FOOTER */
+    footer .links-container{
+        padding-top: 33.5vh;
+        margin-bottom: 0.5vh;
+    }
+    
+    footer .links-container .block-container .logo{
+        height: 4.5vh;
+    }
+
+    footer .footer-container{
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 8%;
+    }
+
+    footer .footer-container .leftside{
+        font-size: 1.2rem;
+    }
+
+    footer .footer-container .btn-group{
+        height: 5vh;
+        width: 100%;
+    }
+
+    footer .img-container4 .background-img2{
+        bottom: -818vh;
+    }
+}
+
+@media screen and (max-width: 700px){
+    /* LANDING PAGE */
+    header .header-container{
+        flex-direction: column;
+    }
+
+    header .header-container .leftside{
+        text-align: center;
+    }
+
+    header .header-container .img-container1{
+        display: none;
+    }
+
+    /* CATEGORIES */
+    main article #categories .categories-container .flex-container .card{
+        width: 60%;
+        margin: 1% 20%;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 800px){
+    /* LANDING PAGE */
+    header #mobile{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        min-height: 100vh;
+        display: block;
+        background-color: #1133e3;
+        padding-top: 12vh;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 450px){
+    /* ACCOUNTS */
+    main article #accounts .switches-container .switch{
+        margin-top: 3%;
+    }
+}

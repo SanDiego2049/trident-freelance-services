@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Freelance Services">
+    <meta name="keywords" content="Freelance, Services, Jobs">
+    <meta name="author" content="SanDiego2049">
+    <title>Trident - Freelance Services Marketplace</title>
+    <link rel="icon" type="image/x-icon" href="./resources/10-10.ico?">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head> 
+<body>
+    <!-- LANDING PAGE -->
+    <header>
+        <nav>
+            <figure class="img-container">
+                <a href="#"><img class="logo" src="./resources/PreviewS-11.png" alt="logo"></a>
+            </figure>
+            <ul>
+                <li><a href="signUp-login.html">💼 Job Listings</a></li>
+                <li><a href="signUp-login.html">🧑‍💻 View Freelancers</a></li>
+                <li><a href="signUp-login.html">📥 Post a Job</a></li>
+                <li><a href="signUp-login.html">📥 Post a Service</a></li>
+            </ul>
+            <div class="button-group">
+                <button class="join"><a href="signUp-login.html" target="_blank" rel="noopener noreferrer">join now</a></button>
+                <button class="login"><a href="signUp-login.html" target="_blank" rel="noopener noreferrer">sign in</a></button>
+            </div>
+            <button id="hamburger">
+                <div class="bar"></div>
+            </button>
+        </nav>
+        <nav id="mobile">
+            <a href="signUp-login.html">Job Listings</a>
+            <a href="signUp-login.html">View Freelancers</a>
+            <a href="signUp-login.html">Post a Job</a>
+            <a href="signUp-login.html">Post a Service</a>
+            <a href="signUp-login.html">Join Now</a>
+            <a class="pushed" href="signUp-login.html">Sign In</a>
+        </nav>
+        <div class="header-container">
+            <div class="leftside">
+                <h1 class="title">Hire & Find Jobs</h1>
+                <h2 class="subtitle">Trident Freelance Services</h2>
+                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                    <input type="text" class="form-control" placeholder="I'm looking for..." aria-label="Input group example" aria-describedby="btnGroupAddon">                
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Jobs
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <li><a class="dropdown-item" href="#">Services</a></li>
+                            <li><a class="dropdown-item" href="#">All</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-primary">🔍 Search</button>
+                </div>
+            </div>
+            <figure class="img-container1">
+                <img class="networking" src="./resources/Preview-19-1.png" alt="networking">
+            </figure>
+        </div>
+        <figure class="img-container2">
+            <img class="background-img" src="./resources/Preview-08.png" alt="background">
+        </figure>
+    </header>
+    <main>
+        <article>
+            <!-- CATEGORIES -->
+            <section id="categories">
+                <div class="subheading-container">
+                    <h3 class="subheading">Trending Top Categories</h3>
+                </div>
+                <div class="categories-container">
+                    <div class="flex-container">
+                        <div class="card">
+                            <img src="./resources/icons8-design.gif" class="card-img-top" alt="Design">
+                            <div class="card-body">
+                                <p class="card-text"><a href="#">Design</a></p>    
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./resources/icons8-sale.gif" class="card-img-top" alt="Digital Marketing">
+                            <div class="card-body">
+                            <p class="card-text"><a href="#">Digital Marketing</a></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./resources/icons8-task.gif" class="card-img-top" alt="Writing & Translation">
+                            <div class="card-body">
+                            <p class="card-text"><a href="#">Writing & Translation</a></p>
+                            </div>
+                        </div>
+                        <div class="card vanish">
+                            <img src="./resources/icons8-live-video-on.gif" class="card-img-top" alt="Video & Animation">
+                            <div class="card-body">
+                            <p class="card-text"><a href="#">Video & Animation</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-container">
+                        <div class="card vanish">
+                            <img src="./resources/icons8-music-heart.gif" class="card-img-top" alt="Music & Audio">
+                            <div class="card-body">
+                            <p class="card-text"><a href="#">Music & Audio</a></p>
+                            </div>
+                        </div>
+                        <div class="card vanish">
+                            <img src="./resources/icons8-developer.gif" class="card-img-top" alt="Programming & Tech">
+                            <div class="card-body">
+                            <p class="card-text"><a href="#">Programming & Tech</a></p>
+                            </div>
+                        </div>
+                        <div class="card vanish">
+                            <img src="./resources/icons8-sun.gif" class="card-img-top" alt="Fun & Lifestyle">
+                            <div class="card-body">
+                            <p class="card-text"><a href="#">Fun & Lifestyle</a></p>
+                            </div>
+                        </div>
+                        <div class="card special">
+                            <div class="card-body more">
+                            <p class="card-text white">Explore Categories</p>
+                            <button>show all</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- JOBS PAGE -->
+            <section id="jobs">
+                <div class="subheading-container">
+                    <h3 class="subheading">Latest Jobs Opening</h3>
+                </div>
+                <div class="jobs-container">
+                    <div class="card">
+                        <img class="user" src="./resources/icons8-username-48.png" alt="user">
+                        <div class="card-body">
+                        <p class="small"><a href="#">Ifeoluwa Olojede</a></p>
+                        <p class="small">Remuneration</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="normal">Copywriting</p>
+                            <p class="normal">$40.25 - $125.99</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="small">Ogun State</p>
+                            <p class="small">(4)Less than 3 weeks</p>
+                        </div>
+                        <div class="cardbody">
+                            <p class="small site">Writing</p>
+                            <button>apply now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="user" src="./resources/icons8-username-48.png" alt="user">
+                        <div class="card-body">
+                        <p class="small"><a href="#">Samuel Akapo</a></p>
+                        <p class="small">Remuneration</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="normal">Logo Design</p>
+                            <p class="normal">$90.50 - $255.00</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="small">Ondo State</p>
+                            <p class="small">(1)Less than 2 days</p>
+                        </div>
+                        <div class="cardbody">
+                            <p class="small site">Design</p>
+                            <button>apply now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="user" src="./resources/icons8-username-48.png" alt="user">
+                        <div class="card-body">
+                        <p class="small"><a href="#">Iseoluwa Amusan</a></p>
+                        <p class="small">Remuneration</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="normal">Photography</p>
+                            <p class="normal">$240.25 - $505.20</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="small">Oyo State</p>
+                            <p class="small">(5)Less than 9 hours</p>
+                        </div>
+                        <div class="cardbody">
+                            <p class="small site">Fun & Lifestyle</p>
+                            <button>apply now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="user" src="./resources/icons8-username-48.png" alt="user">
+                        <div class="card-body">
+                        <p class="small"><a href="#">Chinenye Agu</a></p>
+                        <p class="small">Remuneration</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="normal">Travel Guide</p>
+                            <p class="normal">$20.25 - $100.70</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="small">Imo State</p>
+                            <p class="small">(7)Less than 1 week</p>
+                        </div>
+                        <div class="cardbody">
+                            <p class="small site">Fun & Lifestyle</p>
+                            <button>apply now</button>
+                        </div>
+                    </div>
+                    <button class="centered-button">load more</button>
+                </div>
+                <figure class="img-container3">
+                    <img class="background-img1" src="./resources/Preview12-12.png" alt="background">
+                </figure>
+            </section>
+            <!-- FREELANCERS PAGE -->
+            <section id="freelancers">
+                <div class="subheading-container">
+                    <h3 class="subheading">Top Freelancers</h3>
+                </div>
+                <div class="freelancers-container">
+                    <div class="card">
+                            <img src="./resources/elizeu-dias-2EGNqazbAMk-unsplash.jpg" class="card-img-top" alt="display picture">
+                            <div class="card-body">
+                                <p class="small"><a href="#">Dave Asuquo</a></p>
+                                <p class="normal">Travel Guide</p>
+                                <div class="stars">
+                                    <fieldset class="rating">
+                                        <input type="checkbox" id="star5" name="rating" value="5"/>
+                                        <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                                        <input type="checkbox" id="star4half" name="rating" value="4 and a half"/>
+                                        <label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                        <input type="checkbox" id="star4" name="rating" value="4"/>
+                                        <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                                        <input type="checkbox" id="star3half" name="rating" value="3 and a half"/>
+                                        <label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                        <input type="checkbox" id="star3" name="rating" value="3"/>
+                                        <label class = "full" for="star3" title="Meh - 3 stars"></label>
+                                        <input type="checkbox" id="star2half" name="rating" value="2 and a half"/>
+                                        <label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                        <input type="checkbox" id="star2" name="rating" value="2"/>
+                                        <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                                        <input type="checkbox" id="star1half" name="rating" value="1 and a half"/>
+                                        <label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                        <input type="checkbox" id="star1" name="rating" value="1"/>
+                                        <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                        <input type="checkbox" id="starhalf" name="rating" value="half"/>
+                                        <label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                    </fieldset>
+                                </div>
+                                <p class="small">Fun & Lifestyle</p>
+                            </div>
+                    </div>
+                    <div class="card">
+                            <img src="./resources/leon-ell-C8Q_zR8PDlA-unsplash.jpg" class="card-img-top" alt="display picture">
+                            <div class="card-body">
+                                <p class="small"><a href="#">Susan Pwajok</a></p>
+                                <p class="normal">Character Animation</p>
+                                <div class="stars">
+                                    <fieldset class="rating">
+                                        <input type="checkbox" id="star15" name="rating" value="15"/>
+                                        <label class = "full" for="star15" title="Awesome - 15 stars"></label>
+                                        <input type="checkbox" id="star14half" name="rating" value="14 and a half"/>
+                                        <label class="half" for="star14half" title="Pretty good - 14.5 stars"></label>
+                                        <input type="checkbox" id="star14" name="rating" value="14"/>
+                                        <label class = "full" for="star14" title="Pretty good - 14 stars"></label>
+                                        <input type="checkbox" id="star13half" name="rating" value="13 and a half"/>
+                                        <label class="half" for="star13half" title="Meh - 13.5 stars"></label>
+                                        <input type="checkbox" id="star13" name="rating" value="13"/>
+                                        <label class = "full" for="star13" title="Meh - 13 stars"></label>
+                                        <input type="checkbox" id="star12half" name="rating" value="12 and a half"/>
+                                        <label class="half" for="star12half" title="Kinda bad - 12.5 stars"></label>
+                                        <input type="checkbox" id="star12" name="rating" value="12"/>
+                                        <label class = "full" for="star12" title="Kinda bad - 12 stars"></label>
+                                        <input type="checkbox" id="star11half" name="rating" value="11 and a half"/>
+                                        <label class="half" for="star11half" title="Meh - 11.5 stars"></label>
+                                        <input type="checkbox" id="star11" name="rating" value="11"/>
+                                        <label class = "full" for="star11" title="Sucks big time - 11 star"></label>
+                                        <input type="checkbox" id="star10half" name="rating" value="10 and a half"/>
+                                        <label class="half" for="star10half" title="Sucks big time - 10.5 stars"></label>
+                                    </fieldset>
+                                </div>
+                                <p class="small">Video & Animation</p>
+                            </div>
+                    </div>
+                    <div class="card vanish">
+                            <img src="./resources/leon-ell-f6HbVnGtNnY-unsplash.jpg" class="card-img-top" alt="display picture">
+                            <div class="card-body">
+                                <p class="small"><a href="#">Mary Jane</a></p>
+                                <p class="normal">Web Development</p>
+                                <div class="stars">
+                                    <fieldset class="rating">
+                                        <input type="checkbox" id="star20" name="rating" value="20"/>
+                                        <label class = "full" for="star20" title="Awesome - 20 stars"></label>
+                                        <input type="checkbox" id="star19half" name="rating" value="19 and a half"/>
+                                        <label class="half" for="star19half" title="Pretty good - 19.5 stars"></label>
+                                        <input type="checkbox" id="star19" name="rating" value="19"/>
+                                        <label class = "full" for="star19" title="Pretty good - 19 stars"></label>
+                                        <input type="checkbox" id="star18half" name="rating" value="18 and a half"/>
+                                        <label class="half" for="star18half" title="Meh - 18.5 stars"></label>
+                                        <input type="checkbox" id="star18" name="rating" value="18"/>
+                                        <label class = "full" for="star18" title="Meh - 18 stars"></label>
+                                        <input type="checkbox" id="star17half" name="rating" value="17 and a half"/>
+                                        <label class="half" for="star17half" title="Kinda bad - 17.5 stars"></label>
+                                        <input type="checkbox" id="star17" name="rating" value="17"/>
+                                        <label class = "full" for="star17" title="Kinda bad - 17 stars"></label>
+                                        <input type="checkbox" id="star16half" name="rating" value="16 and a half"/>
+                                        <label class="half" for="star16half" title="Meh - 16.5 stars"></label>
+                                        <input type="checkbox" id="star16" name="rating" value="16"/>
+                                        <label class = "full" for="star16" title="Sucks big time - 16 star"></label>
+                                        <input type="checkbox" id="star15half" name="rating" value="15 and a half"/>
+                                        <label class="half" for="star15half" title="Sucks big time - 15.5 stars"></label>
+                                    </fieldset>
+                                </div>
+                                <p class="small">Programming & Tech</p>
+                            </div>
+                    </div>
+                    <div class="card">
+                            <img src="./resources/tamarcus-brown-29pFbI_D1Sc-unsplash.jpg" class="card-img-top" alt="display picture">
+                            <div class="card-body">
+                                <p class="small"><a href="#">Oreoluwa Alaba</a></p>
+                                <p class="normal">UI/UX Designer</p>
+                                <div class="stars">
+                                    <fieldset class="rating">
+                                        <input type="checkbox" id="star25" name="rating" value="25"/>
+                                        <label class = "full" for="star25" title="Awesome - 25 stars"></label>
+                                        <input type="checkbox" id="star24half" name="rating" value="24 and a half"/>
+                                        <label class="half" for="star24half" title="Pretty good - 24.5 stars"></label>
+                                        <input type="checkbox" id="star24" name="rating" value="24"/>
+                                        <label class = "full" for="star24" title="Pretty good - 24 stars"></label>
+                                        <input type="checkbox" id="star23half" name="rating" value="23 and a half"/>
+                                        <label class="half" for="star23half" title="Meh - 23.5 stars"></label>
+                                        <input type="checkbox" id="star23" name="rating" value="23"/>
+                                        <label class = "full" for="star23" title="Meh - 23 stars"></label>
+                                        <input type="checkbox" id="star22half" name="rating" value="22 and a half"/>
+                                        <label class="half" for="star22half" title="Kinda bad - 22.5 stars"></label>
+                                        <input type="checkbox" id="star22" name="rating" value="22"/>
+                                        <label class = "full" for="star22" title="Kinda bad - 22 stars"></label>
+                                        <input type="checkbox" id="star21half" name="rating" value="21 and a half"/>
+                                        <label class="half" for="star21half" title="Meh - 21.5 stars"></label>
+                                        <input type="checkbox" id="star21" name="rating" value="21"/>
+                                        <label class = "full" for="star21" title="Sucks big time - 21 star"></label>
+                                        <input type="checkbox" id="star20half" name="rating" value="20 and a half"/>
+                                        <label class="half" for="star20half" title="Sucks big time - 20.5 stars"></label>
+                                    </fieldset>
+                                </div>
+                                <p class="small">Design</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="centered-button">see all</button>
+                </div>
+            </section>
+            <!-- ACCOUNTS PAGE -->
+            <section id="accounts">
+                <div class="subheading-container">
+                    <h3 class="subheading">Accounts Premium</h3>
+                </div>
+                <div class="switches-container">
+                    <p class="small">I'm a Freelancer</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <p class="small">I'm an Employer</p>
+                </div>
+                <div class="accounts-container">
+                    <div class="card">
+                        <img src="./resources/Previewss-13.png" class="card-img-top" alt="pricing">
+                        <div class="card-body">
+                            <h5 class="card-title">Package Features:</h5>
+                            <div class="flexbox">
+                                <p class="card-text">No of credits</p>
+                                <p class="card-text">100</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">No of services</p>
+                                <p class="card-text">60</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">No of featured services</p>
+                                <p class="card-text">40</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">Badge</p>
+                                <p class="card-text">❌</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">Banner options</p>
+                                <p class="card-text">✅</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">Duration</p>
+                                <p class="card-text">30 days</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">No of skills</p>
+                                <p class="card-text">40</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">buy now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./resources/Previewss-14.png" class="card-img-top" alt="pricing">
+                        <div class="card-body">
+                            <h5 class="card-title">Package Features:</h5>
+                            <div class="flexbox">
+                                <p class="card-text">No of credits</p>
+                                <p class="card-text">200</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">No of services</p>
+                                <p class="card-text">80</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">No of featured services</p>
+                                <p class="card-text">60</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">Badge</p>
+                                <p class="card-text">Plus member</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">Banner options</p>
+                                <p class="card-text">✅</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">Duration</p>
+                                <p class="card-text">30 days</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">No of skills</p>
+                                <p class="card-text">60</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">buy now</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./resources/Previewss-15.png" class="card-img-top" alt="pricing">
+                        <div class="card-body">
+                            <h5 class="card-title">Package Features:</h5>
+                            <div class="flexbox">
+                                <p class="card-text">No of credits</p>
+                                <p class="card-text">300</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">No of services</p>
+                                <p class="card-text">100</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">No of featured services</p>
+                                <p class="card-text">80</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">Badge</p>
+                                <p class="card-text">Pro member</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">Banner options</p>
+                                <p class="card-text">✅</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">Duration</p>
+                                <p class="card-text">30 days</p>
+                            </div>
+                            <div class="flexbox">
+                                <p class="card-text">No of skills</p>
+                                <p class="card-text">80</p>
+                            </div>
+                            <a href="#" class="btn btn-primary">buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="links-container">
+            <div class="block-container">
+                <img class="logo" src="./resources/Preview-17.png" alt="logo">
+                <p class="small">Hire & Find Jobs</p>
+                <p class="small">Freelance Services Marketplace</p>
+            </div>
+            <div class="block1-container">
+                <p class="title">Search By Location</p>
+                <p class="small"><a href="#"> Jobs in Lagos</a></p>
+                <p class="small"><a href="#"> Jobs in Abuja</a></p>
+                <p class="small"><a href="#"> Jobs in Port Harcout</a></p>
+                <p class="small"><a href="#"> Jobs in Kaduna</a></p>
+                <p class="small"><a href="#">+ View All</a></p>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="leftside">
+                <p class="text">Register Today!</p>
+            </div>
+            <div class="btn-group rightside" role="group" aria-label="Button group with nested dropdown">
+                <input type="text" class="form-control" placeholder="Add your email" aria-label="Input group example" aria-describedby="btnGroupAddon">                
+                <button type="button" class="btn btn-primary stretch">subscribe</button>
+            </div>
+        </div>
+        <figure class="img-container4">
+            <img class="background-img2" src="./resources/Preview-16.png" alt="background">
+        </figure>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

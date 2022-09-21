@@ -1,0 +1,721 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans";
+    scroll-behavior: smooth;
+}
+
+/* LANDING PAGE */
+header{
+    height: 100vh;
+    width: 100%;
+}
+
+header nav{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+header nav .img-container{
+    margin: auto 0;
+    height: 60%;
+}
+
+header nav .img-container .logo{
+    height: 100%;
+    margin-left: 10%;
+}
+
+header nav ul{
+    height: 50%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+header nav ul li{
+    display: flex;
+    white-space: nowrap;
+    padding-right: 5vh;
+}
+
+header nav ul li a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+header nav ul li a:hover{
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+header nav .button-group{
+    display: flex;
+    padding-right: 2%;
+    height: 50%;
+}
+
+header nav .button-group button{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding: 8px 15px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+header nav .button-group button a{
+    text-decoration: none;
+    padding: 0;
+}
+
+header nav .button-group button a:hover{
+    font-size: 0.75rem;
+    transition: 0.2s;
+}
+
+header nav .button-group .join{
+    background-color: gold;
+    border: none;
+}
+
+header nav .button-group .join a{
+    color: black;
+}
+
+header nav .button-group .login{
+    background-color: #1133e3;
+    border: none;
+    margin-left: 5%;
+}
+
+header nav .button-group .login a{
+    color: white;
+}
+
+header #hamburger{
+    display: none;
+}
+
+header #hamburger .bar, header #hamburger:after, header #hamburger:before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #0f2592;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+header #hamburger.is-active:before{
+    transform: rotate(-45deg) translate(-7px, 7px);
+}
+
+header #hamburger.is-active .bar{
+    opacity: 0;
+}
+
+header #hamburger.is-active:after{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+header #mobile{
+    display: none;
+}
+
+header #mobile.is-active{
+    right: 0;
+    transition: 0.4s;
+}
+
+header #mobile a{
+    width: 100%;
+    margin: 0 auto 20px;
+    display: block;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: #0f2592;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+header #mobile a:hover{
+    background-color: #2196F3;
+}
+
+header #mobile .pushed{
+    margin-top: 100px;
+}
+
+header .header-container{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    margin: auto 0;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+header .header-container .leftside .title{
+    font-size: 2.9rem;
+    font-weight: 500;
+}
+
+header .header-container .leftside .btn-group .btn-primary{
+    padding: 0 30px;
+    background-color: #1133e3;
+    font-weight: 500;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+header .header-container .leftside .btn-group .btn-primary:focus, header .header-container .leftside .btn-group .form-control:focus{
+    box-shadow: none;
+}
+
+header .header-container .img-container1{
+    width: 25vw;
+}
+
+header .header-container .img-container1 .networking{
+    width: 100%;
+}
+
+header .img-container2 .background-img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    z-index: -1;
+}
+
+/* CATEGORIES PAGE */  
+main article #categories{
+    height: 100vh;
+    width: 100%;
+} 
+
+main article .subheading-container{
+    height: 20vh;
+    width: 100%;
+    padding: 8vh 0;
+}
+
+main article .subheading-container .subheading{
+    font-weight: 900;
+    color: #1133e3;
+    text-align: center;
+}
+
+main article #categories .categories-container{
+    height: 80vh;
+    width: 100%;
+}
+
+main article #categories .categories-container .flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+main article #categories .categories-container .flex-container .card{
+    width: 32vh;
+    height: 35vh;
+    background-color: rgb(245, 245, 245);
+}
+
+main article #categories .categories-container .flex-container .card:hover{
+    background-color: #fff;
+}
+
+main article #categories .categories-container .flex-container .special{
+    padding: 5px;
+}
+
+main article #categories .categories-container .flex-container .card .more{
+    background-color: #1133e3;
+    display: flex;
+    flex-direction: column;
+}
+
+main article #categories .categories-container .flex-container .card .card-img-top{
+    height: 8vh;
+    width: 8vh;
+    border: gray 1px solid;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+}
+
+main article #categories .categories-container .flex-container .card .card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main article #categories .categories-container .flex-container .card .card-body .card-text{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+main article #categories .categories-container .flex-container .card .card-body .card-text a{
+    color: #1133e3;
+    text-decoration: none;
+}
+
+main article #categories .categories-container .flex-container .card .card-body .white{
+    color: #fff;
+}
+
+main article #categories .categories-container .flex-container .card .card-body button{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 8px 15px;
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 15vh;
+    border: none;
+    white-space: nowrap;
+}
+
+main article #categories .categories-container .flex-container .card .card-body button:hover{
+    width: 15.5vh;
+    transition: 0.2s;
+    font-size: 0.8rem;
+}
+
+/* JOBS PAGE */
+main article #jobs{
+    height: 150vh;
+    width: 100%;
+}
+
+main article #jobs .jobs-container{
+    height: 130vh;
+    width: 100%;
+}
+
+main article #jobs .jobs-container .card{
+    width: 70%;
+    height: 25vh;
+    display: flex;
+    margin: auto;
+    background-color: #fff;
+    margin-bottom: 1vh;
+}
+
+main article #jobs .jobs-container .card:hover{
+    width: 71%;
+    height: 26vh;
+    transition: 0.3s;
+}
+
+main article #jobs .jobs-container .card .user{
+    height: 9vh;
+    width: 9vh;
+    position: relative;
+    top: 3.7vh;
+    left: 1vh;
+}
+
+main article #jobs .jobs-container .card .card-body{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 80px;
+    position: relative;
+    bottom: 5vh;
+}
+
+main article #jobs .jobs-container .card .card-body p{
+    margin: 0;
+}
+
+main article #jobs .jobs-container .card .card-body .small{
+    font-size: 0.8rem;
+    font-weight: 700;
+    height: 2.2vh;
+}
+
+main article #jobs .jobs-container .card .card-body .small a{
+    color: #1133e3;
+    text-decoration: none;
+}
+
+main article #jobs .jobs-container .card .card-body .normal{
+    font-size: 1.3rem;
+    font-weight: 700;
+    height: 4vh;
+}
+
+main article #jobs .jobs-container .card .cardbody{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+main article #jobs .jobs-container .card .cardbody .small{
+    padding: 5px 10px;
+    background-color: rgba(197, 197, 197, 0.589);
+    border-radius: 5vh;
+    font-size: 0.8rem;
+}
+
+main article #jobs .jobs-container .card .cardbody button{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 5px 9px;
+    width: 15vh;
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: #1d47ef;
+    border: none;
+    color: #fff;
+    margin-bottom: 2.5vh;
+}
+
+main article #jobs .jobs-container .card .cardbody button:hover{
+    background-color: #1133e3;
+}
+
+main article .centered-button{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    width: 17vh;
+    height: 5vh;
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: #1133e3;
+    border: none;
+    color: #fff;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    white-space: nowrap;
+}
+
+main article .centered-button:hover{
+    width: 17.5vh;
+    height: 5.5vh;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+main article #jobs .img-container3 .background-img1{
+    height: 140vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: -237vh;
+    z-index: -1;
+}
+
+/* FREELANCERS PAGE */
+main article #freelancers{
+    width: 100%;
+    height: 90vh;
+    background-color: #c7cce2;
+}
+
+main article #freelancers .freelancers-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main article #freelancers .freelancers-container .card{
+    width: 35vh;
+}
+
+main article #freelancers .freelancers-container .card .card-body .small{
+    font-size: 0.8rem;
+    font-weight: 700;
+    height: 1vh;
+}
+
+main article #freelancers .freelancers-container .card .card-body .small a{
+    color: #1133e3;
+    text-decoration: none;
+}
+
+main article #freelancers .freelancers-container .card .card-body .normal{
+    font-size: 1.2rem;
+    font-weight: 700;
+    height: 2vh;
+}
+
+main article #freelancers .freelancers-container .card .card-body .stars{
+    display: flex;
+    justify-content: flex-start;
+}
+
+main article #freelancers .freelancers-container .card .card-body .stars .rating{ 
+    border: none;
+    float: left;
+}
+  
+main article #freelancers .freelancers-container .card .card-body .stars .rating > input{ 
+    display: none; 
+} 
+
+main article #freelancers .freelancers-container .card .card-body .stars .rating > label:before{ 
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+  
+main article #freelancers .freelancers-container .card .card-body .stars .rating > .half:before{ 
+    content: "\f089";
+    position: absolute;
+}
+  
+main article #freelancers .freelancers-container .card .card-body .stars .rating > label{ 
+    color: #ddd; 
+    float: right; 
+}
+  
+main article #freelancers .freelancers-container .card .card-body .stars .rating > input:checked ~ label, 
+main article #freelancers .freelancers-container .card .card-body .stars .rating:not(:checked) > label:hover, 
+main article #freelancers .freelancers-container .card .card-body .stars .rating:not(:checked) > label:hover ~ label{ 
+    color: #FFD700;  
+} 
+  
+main article #freelancers .freelancers-container .card .card-body .stars .rating > input:checked + label:hover, 
+main article #freelancers .freelancers-container .card .card-body .stars .rating > input:checked ~ label:hover,
+main article #freelancers .freelancers-container .card .card-body .stars .rating > label:hover ~ input:checked ~ label, 
+main article #freelancers .freelancers-container .card .card-body .stars .rating > input:checked ~ label:hover ~ label{ 
+    color: #FFED85;  
+}
+
+/* ACCOUNTS PAGE */
+main article #accounts{
+    height: 100vh;
+    width: 100%;
+}
+
+main article #accounts .switches-container{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+main article #accounts .switches-container .small{
+    font-size: 1.1rem;
+    font-weight: 700;
+    height: 3vh;
+    margin: 0 20px;
+    text-align: center;
+}
+
+main article #accounts .switches-container .switch{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+}
+
+main article #accounts .switches-container .switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+main article #accounts .switches-container .switch .slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2196F3;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+main article #accounts .switches-container .switch .slider:before{
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+main article #accounts .switches-container .switch input:checked + .slider{
+    background-color: #2196F3;
+}
+  
+main article #accounts .switches-container .switch input:focus + .slider{
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+main article #accounts .switches-container .switch input:checked + .slider:before{
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+  
+main article #accounts .switches-container .switch .slider.round{
+    border-radius: 34px;
+}
+  
+main article #accounts .switches-container .switch .slider.round:before{
+    border-radius: 50%;
+}
+
+main article #accounts .accounts-container{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+main article #accounts .accounts-container .card{
+    width: 40vh;
+}
+
+main article #accounts .accounts-container .card:hover{
+    width: 41vh;
+    transition: 0.2s;
+}
+
+main article #accounts .accounts-container .card .card-body .card-title{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+main article #accounts .accounts-container .card .card-body .flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+main article #accounts .accounts-container .card .card-body .flexbox .card-text{
+    height: 1vh;
+    font-weight: 500;
+    color: gray;
+}
+
+main article #accounts .accounts-container .card .card-body .btn-primary{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    width: 17vh;
+    height: 5vh;
+    padding: 20px 9px;
+    font-weight: 700;
+    background-color: #1133e3;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    white-space: nowrap;
+}
+
+main article #accounts .accounts-container .card .card-body .btn-primary:hover{
+    width: 17.5vh;
+    height: 5.5vh;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 73vh;
+}
+
+footer .links-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 32vh;
+    margin-bottom: 13.5vh;
+}
+
+footer .links-container .block-container .logo{
+    height: 6vh;
+    margin-bottom: 2vh;
+}
+
+footer .links-container .block-container .small{
+    font-size: 0.8rem;
+    font-weight: 700;
+    height: 1vh;
+    color: #fff;
+}
+
+footer .links-container .block1-container .title{
+    color: #ffdf29;
+    font-size: 1.1rem;
+    height: 1.2vh;
+    font-weight: 700;
+}
+
+footer .links-container .block1-container a{
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+}
+
+footer .links-container .block1-container a:hover{
+    text-decoration: underline;
+    transition: 0.1s;
+}
+
+footer .footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .footer-container .leftside{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+footer .footer-container .leftside .text, footer .links-container .block1-container .small{
+    margin: 0;
+}
+
+footer .footer-container .btn-group{
+    height: 6vh;
+    width: 36%;
+    display: flex;
+}
+
+footer .footer-container .btn-group .btn-primary{
+    text-transform: uppercase;
+    padding: 0 20px;
+    background-color: #1133e3;
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+footer .footer-container .btn-group .btn-primary:focus, footer .footer-container .btn-group .form-control:focus{
+    box-shadow: none;
+}
+
+footer .img-container4 .background-img2{
+    height: 72vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: -513.4vh;
+    z-index: -1;
+}
