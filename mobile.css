@@ -124,10 +124,6 @@
         flex-direction: column;
     }
 
-    main article #accounts .accounts-container .card, main article #accounts .accounts-container .card:hover{
-        margin: 1vh auto;
-    }
-
     /* FOOTER */
     footer .links-container{
         padding-top: 33.5vh;
