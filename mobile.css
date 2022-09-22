@@ -109,6 +109,7 @@
 
     main article #freelancers .freelancers-container .card{
         margin: 1vh auto;
+        width: 40vh;
     }
 
     main article #freelancers .flexbox .card .card-body .normal{
