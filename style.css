@@ -1,10 +1,18 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@font-face {
+    font-family: 'josefin_sansregular';
+    src: url('josefinsans-regular-webfont.woff2') format('woff2'),
+         url('josefinsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Josefin Sans";
+    font-family: "josefin_sansregular", Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
