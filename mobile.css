@@ -124,9 +124,13 @@
         flex-direction: column;
     }
 
+    main article #accounts .accounts-container .card{
+        margin: 1vh auto;
+    }
+
     /* FOOTER */
     footer .links-container{
-        padding-top: 33.5vh;
+        padding-top: 48vh;
         margin-bottom: 0.5vh;
     }
     
@@ -150,7 +154,7 @@
     }
 
     footer .img-container4 .background-img2{
-        bottom: -818vh;
+        bottom: -830vh;
     }
 }
 
