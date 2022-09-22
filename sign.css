@@ -250,3 +250,13 @@ header .background-img{
 		z-index: 5;
 	}
 }
+
+@media screen and (max-width: 576px) {
+	header #container .form-container .social-container{
+		display: flex;
+	}
+
+	header #container .form-container .social-container a{
+		margin: 0 3px;
+	}
+}
