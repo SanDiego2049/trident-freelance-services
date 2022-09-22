@@ -309,7 +309,7 @@ main article #jobs .jobs-container{
 }
 
 main article #jobs .jobs-container .card{
-    width: 70%;
+    width: 80%;
     height: 25vh;
     display: flex;
     margin: auto;
@@ -318,7 +318,7 @@ main article #jobs .jobs-container .card{
 }
 
 main article #jobs .jobs-container .card:hover{
-    width: 71%;
+    width: 81%;
     height: 26vh;
     transition: 0.3s;
 }
